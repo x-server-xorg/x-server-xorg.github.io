@@ -1,1 +1,1 @@
-# x-server-xorg.github.io
+Personal Linuxoid github blog
