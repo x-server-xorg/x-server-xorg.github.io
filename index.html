@@ -1,52 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru" data-theme="dark">
 <head>
-  <title>Debian i3wm Remix Distro</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-    .screenshot-container {
-      display: flex;
-    }
-
-    .screenshot-container img {
-      width: 50%;
-      height: auto;
-      padding: 10px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nikita Rozhdestvin — Linux enthusiast, Python/C++ developer. Portfolio with GitHub projects.">
+  <meta name="theme-color" content="#7C3AED">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💜</text></svg>">
+  <link rel="preconnect" href="https://api.github.com">
+  <title data-i18n="page.title">x-server-xorg — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Debian i3wm Remix Distro</h1>
-  </header>
-  
-  <nav>
-    <ul>
-      <li><a href="#">Главная</a></li>
-    </ul>
-  </nav>
 
-    <section>
-    <h2>Скриншоты</h2>
-    <div class="screenshot-container">
-      <img src="1.png" alt="Скриншот 1">
-      <img src="screenshot2.png" alt="Скриншот 2">
+  <div class="mica-bg">
+    <div class="mica-layer layer-1"></div>
+    <div class="mica-layer layer-2"></div>
+    <div class="mica-layer layer-3"></div>
+  </div>
+
+  <header class="acrylic-header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">x-server-xorg</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" data-i18n="nav.about">О себе</a>
+        <a href="#projects" data-i18n="nav.projects">Проекты</a>
+        <a href="https://github.com/x-server-xorg" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-btn" id="langToggle" aria-label="Switch language">EN</button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
-  </section>
+  </header>
 
-  <section>
-    <h2>Скачать дистрибутив</h2>
-    <a href="https://drive.google.com/file/d/1rUggR9Z63rtgPbTagiRY1FdJ5gMlHaog/view" class="download-button">Скачать</a>
-  </section>
-  
-  <h2>Связь с развработчиком</h2>
-<li><a href="https://t.me/x_server_xorg">Telegram</a></li>
-  <h2>Информация о дистрибутиве</h2>
-  <p>Данный дистрибутив собрал все лучшее что есть в linux сообществе.</br> Стабильность, надежность, минимализм. <br> В данном дистрибутиве используется современный минималистичный тайловый оконный менеджер I3WM</p>
-  
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <div class="avatar-wrapper">
+            <img src="https://avatars.githubusercontent.com/u/129722080?v=4" alt="x-server-xorg" class="avatar" id="avatar">
+            <div class="avatar-ring"></div>
+          </div>
+          <h1 class="hero-title">Nikita Rozhdestvin</h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">Linux enthusiast, Python/C++ developer</p>
+          <p class="hero-description" data-i18n="hero.description">Создаю open-source инструменты, экспериментирую с Linux, пишу на Python и C++</p>
+          <div class="hero-stats" id="heroStats">
+            <div class="stat">
+              <span class="stat-value" id="repoCount">—</span>
+              <span class="stat-label" data-i18n="stats.repos">репозиториев</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" id="starCount">—</span>
+              <span class="stat-label" data-i18n="stats.stars">звёзд</span>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a href="https://github.com/x-server-xorg" target="_blank" rel="noopener" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span data-i18n="hero.githubBtn">GitHub Profile</span>
+            </a>
+            <a href="https://t.me/x_server_xorg" target="_blank" rel="noopener" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              <span>Telegram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <p>© 2024 Debian i3WM Live Remix</p>
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title" data-i18n="about.title">О себе</h2>
+        <div class="about-content">
+          <div class="about-text glass-card">
+            <p data-i18n="about.p1">Привет! Я Nikita, Linux-энтузиаст и разработчик из России. Пишу на Python и C++, экспериментирую с NixOS, Gentoo и оконными менеджерами (i3, Sway, awesome).</p>
+            <p data-i18n="about.p2">Мои проекты — это в основном open-source инструменты: от TUI-мессенджера для ВК до утилит для записи ISO на USB. Я верю в минимализм, производительность и красивый код.</p>
+            <div class="tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">C++</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Linux</span>
+              <span class="tech-badge">NixOS</span>
+              <span class="tech-badge">Git</span>
+            </div>
+          </div>
+          <div class="about-stats glass-card">
+            <div class="about-stat-item">
+              <span class="about-stat-value" id="totalRepos">—</span>
+              <span class="about-stat-label" data-i18n="stats.projects">проектов</span>
+            </div>
+            <div class="about-stat-item">
+              <span class="about-stat-value" id="totalStars">—</span>
+              <span class="about-stat-label" data-i18n="stats.starsTotal">звёзд на GitHub</span>
+            </div>
+            <div class="about-stat-item">
+              <span class="about-stat-value">8</span>
+              <span class="about-stat-label" data-i18n="stats.followers">подписчиков</span>
+            </div>
+            <div class="about-stat-item">
+              <span class="about-stat-value">13+</span>
+              <span class="about-stat-label" data-i18n="stats.years">на Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title" data-i18n="projects.title">Проекты</h2>
+        <p class="section-subtitle" data-i18n="projects.subtitle">Мои open-source репозитории, загруженные с GitHub API</p>
+        <div class="projects-grid" id="projectsGrid">
+          <div class="project-card skeleton" aria-hidden="true">
+            <div class="skeleton-line" style="width: 70%"></div>
+            <div class="skeleton-line" style="width: 100%"></div>
+            <div class="skeleton-line" style="width: 40%"></div>
+          </div>
+          <div class="project-card skeleton" aria-hidden="true">
+            <div class="skeleton-line" style="width: 60%"></div>
+            <div class="skeleton-line" style="width: 100%"></div>
+            <div class="skeleton-line" style="width: 50%"></div>
+          </div>
+          <div class="project-card skeleton" aria-hidden="true">
+            <div class="skeleton-line" style="width: 75%"></div>
+            <div class="skeleton-line" style="width: 100%"></div>
+            <div class="skeleton-line" style="width: 35%"></div>
+          </div>
+          <div class="project-card skeleton" aria-hidden="true">
+            <div class="skeleton-line" style="width: 65%"></div>
+            <div class="skeleton-line" style="width: 100%"></div>
+            <div class="skeleton-line" style="width: 45%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="acrylic-footer">
+    <div class="container footer-inner">
+      <div class="footer-social">
+        <a href="https://github.com/x-server-xorg" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://t.me/x_server_xorg" target="_blank" rel="noopener" aria-label="Telegram">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        </a>
+      </div>
+      <p class="footer-text">
+        &copy; <span id="year"></span> Nikita Rozhdestvin.
+        <span data-i18n="footer.made">Сделано с 💜 и открытым исходным кодом</span>
+      </p>
+    </div>
   </footer>
+
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <script src="js/app.js"></script>
 </body>
 </html>

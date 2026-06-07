@@ -1,0 +1,16 @@
+{
+  "name": "x-server-xorg Portfolio",
+  "short_name": "x-server-xorg",
+  "description": "Portfolio of Nikita Rozhdestvin — Linux enthusiast, Python/C++ developer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A14",
+  "theme_color": "#7C3AED",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%237C3AED'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='white'>X</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}
